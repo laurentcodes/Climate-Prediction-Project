@@ -24,7 +24,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import PolynomialFeatures
 from datetime import timedelta
 
-app = Flask(__name__, template_folder='../template')
+app = Flask(__name__, static_folder='./frontend/build')
 
 months = [
     'January',
@@ -138,7 +138,7 @@ def train():
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return app.send_static_file('index.html')
 
 
 @app.route('/api/current', methods=['GET'])
