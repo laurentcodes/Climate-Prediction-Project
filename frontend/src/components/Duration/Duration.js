@@ -43,7 +43,7 @@ const Duration = ({ history }) => {
 		console.log(isEmpty);
 
 		axios
-			.post('/api/res', {
+			.post('climate-prediction-proj.herokuapp.com/api/res', {
 				method: 'POST',
 				headers: {
 					content_type: 'application/json',
@@ -69,7 +69,7 @@ const Duration = ({ history }) => {
 			>
 				Home
 			</Button>
-			
+
 			<h2 className='py-4'>Duration Selection</h2>
 			<Form onSubmit={onSubmit}>
 				<Form.Group>
