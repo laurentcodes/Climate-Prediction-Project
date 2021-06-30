@@ -43,7 +43,7 @@ const Duration = ({ history }) => {
 		console.log(isEmpty);
 
 		axios
-			.post('https://climate-prediction-proj.herokuapp.com/api/res', {
+			.post('/api/res', {
 				method: 'POST',
 				headers: {
 					content_type: 'application/json',

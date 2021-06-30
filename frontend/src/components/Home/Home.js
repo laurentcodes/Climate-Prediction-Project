@@ -11,9 +11,7 @@ const Home = ({ history }) => {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			const { data } = await axios.get(
-				'https://climate-prediction-proj.herokuapp.com/api/current'
-			);
+			const { data } = await axios.get('/api/current');
 			setTempNow(data.hum);
 			setHumNow(data.temp);
 			setRainNow(data.rain);
