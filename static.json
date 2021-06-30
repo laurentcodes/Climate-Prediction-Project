@@ -1,0 +1,7 @@
+{
+	"proxies": {
+		"/": {
+			"origin": "https://climate-prediction-proj.herokuapp.com/"
+		}
+	}
+}
