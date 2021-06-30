@@ -24,7 +24,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import PolynomialFeatures
 from datetime import timedelta
 
-app = Flask(__name__, static_folder='/build')
+app = Flask(__name__, static_folder='./frontend/build/static')
 
 months = [
     'January',
