@@ -138,7 +138,7 @@ def train():
 
 @app.route('/')
 def index():
-    return app.send_static_file('index.html')
+    return app.send_static_file('./build/index.html')
 
 
 @app.route('/api/current', methods=['GET'])
