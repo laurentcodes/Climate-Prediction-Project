@@ -38,7 +38,8 @@ const Home = ({ history }) => {
 								<h5>Humidity: {humNow}%</h5>
 
 								<h5>
-									Temperature: {tempNow}°F / {(tempNow - 32) * (5 / 9)}°C
+									Temperature: {tempNow}°F /{' '}
+									{((tempNow - 32) * (5 / 9)).toFixed(1)}°C
 								</h5>
 
 								<h5>Precipitation: {rainNow}mm</h5>
